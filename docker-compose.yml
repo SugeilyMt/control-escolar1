@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  strapi:
+    container_name: tc1-2024a
+    image: strapi/strapi
+    environment:
+      - DATABASE_CLIENT=mongo
+      - DATABASE_HOST=tc1-2024a.ou3hzsl.mongodb.net
+      - DATABASE_PORT=27017
+      - DATABASE_SSL=true
+      - DATABASE_SRV=true
+      - DATABASE_NAME=tc1-2024a
+      - DATABASE_USERNAME=admin
+      - DATABASE_PASSWORD=Admin123
+    ports:
+      - 1337:1337
